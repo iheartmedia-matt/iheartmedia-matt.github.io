@@ -12693,7 +12693,7 @@ section {
   color: #222;
 }
 .footer_section {
-  background: url(../img/pattern_bg.jpg) repeat left top;
+  background: url(../img/new/Footer2.jpg) no-repeat left top;
 }
 .footer_bottom {
   border-top: 1px solid #333333;
@@ -13090,7 +13090,7 @@ section {
   margin: 7px 7px 25px 7px;
 }
 #section7 {
-  background: url('../img/new/Future.png') no-repeat center center;
+  background: url('../img/new/Future.jpg') no-repeat center center;
   background-size: cover;
 }
 #section7 .row {
