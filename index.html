@@ -25,8 +25,11 @@
         <script src="_/js/detectizr.min.js"></script>
         
         <!-- Google Web Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        
+        <!-- Typekit Web Fonts -->
+        <script src="//use.typekit.net/tvm5tle.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
         
         <!-- Google JS API for charts -->
         <!--<script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
@@ -42,23 +45,25 @@
     <header id="header_outer">
         <div class="container">
             <div class="header_section">
-            <div class="logo"><a href="#section1"><img src="_/img/new/iheart_bc-logo.png" alt="iHeartMedia Marketing Center"></a></div>
-                    <nav id="nav">
-                        <ul class="toggle">
-                            <li><a href="#section2">Our Impact</a></li>
-                            <li><a href="#section4">Our Audiences</a></li>
-                            <li><a href="#section5">Case Studies</a></li>
-                            <li><a href="#section6">Featured Offerings</a></li>
-                            <li><a href="#section8">Get In Touch</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="line"><a href="#section2">Our Impact</a></li>
-                            <li class="line"><a href="#section4">Our Audiences</a></li>
-                            <li class="line"><a href="#section5">Case Studies</a></li>
-                            <li class="line"><a href="#section6">Featured Offerings</a></li>
-                            <li><a class="btn btn-primary outline" href="#section8" role="button">Get In Touch</a></li>
-                        </ul>
-                    </nav>
+            <div class="logo">
+                <a href="#section1" id="logo-link"><img src="_/img/new/iheart_bc-logo.png" alt="iHeartMedia Marketing Center"></a>
+            </div>
+                <nav id="nav">
+                    <ul class="toggle">
+                        <li><a href="#section2">Our Impact</a></li>
+                        <li><a href="#section4">Our Audiences</a></li>
+                        <li><a href="#section5">Case Studies</a></li>
+                        <li><a href="#section6">Featured Offerings</a></li>
+                        <li><a href="#section8">Get In Touch</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="line"><a href="#section2">Our Impact</a></li>
+                        <li class="line"><a href="#section4">Our Audiences</a></li>
+                        <li class="line"><a href="#section5">Case Studies</a></li>
+                        <li class="line"><a href="#section6">Featured Offerings</a></li>
+                        <li><a class="btn btn-primary outline" href="#section8" role="button">Get In Touch</a></li>
+                    </ul>
+                </nav>
                 <a class="res-nav_click"  href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
             </div>
         </div>
@@ -72,23 +77,14 @@
                 <div class="col-md-8 center-block content">
                     <div id="main-headline">
                         <div id="headline1" class="lpF" style="display:none;">
-                            <!--<h2 class="fadeInUp wow animated">Get Heard.</h2>
-                            <h2 class="s1-subheadline delay-1s fadeInUp wow animated">The brain encodes audio differently: In 7 out of 8 cases, audio ads were superior to TV ads in memory encoding &amp; recall.</h2>-->
-                            
                             <h2>Get Heard.</h2>
                             <h2 class="s1-subheadline">The brain encodes audio differently: In 7 out of 8 cases, audio ads were superior to TV ads in memory encoding &amp; recall.</h2>
                         </div>
                         <div id="headline2" class="lpF" style="display:none;">
-                            <!--<h2 class="fadeInUp wow animated">Be Loved.</h2>
-                            <h2 class="s1-subheadline delay-1s fadeInUp wow animated">The iHeartRadio App was the fastest music service to reach 60 million registered users.</h2>-->
-                            
                             <h2>Be Loved.</h2>
                             <h2 class="s1-subheadline">The iHeartRadio App was the fastest music service to reach 60 million registered users.</h2>
                         </div>
                         <div id="headline3" class="lpF" style="display:none;">
-                            <!--<h2 class="fadeInUp wow animated">Drive Results.</h2>
-                            <h2 class="s1-subheadline delay-1s fadeInUp wow animated">We scale on every level and on every platform with our unmatched national reach combined with our powerful local brands.</h2>-->
-                            
                             <h2>Drive Results.</h2>
                             <h2 class="s1-subheadline">We scale on every level and on every platform with our unmatched national reach combined with our powerful local brands.</h2>
                         </div>
@@ -110,7 +106,13 @@
                 <div class="col-md-1"></div>
                 <div class="col-xs-12 col-md-10">
                     <h1>Our Impact</h1>
-                    <img src="_/img/new/MainChart.png" class="img-responsive" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>iHeartMedia is the <span class="thick-red">largest</span> media company by reach in the U.S.</p>
+                            <p class="small">Monthly Reach Millions <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></p>
+                            <img src="_/img/new/MainChart.png" class="img-responsive" />
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -130,26 +132,98 @@
                             <!-- Swiper Slides -->
                             <div class="swiper-slide">
                                 <div class="service_block one delay-03s animated wow zoomIn">
+                                    <div class="col-md-12 slide-copy">
+                                        <p>According to Nielsen, we deliver an average <span class="thick-red">6x return</span> on every dollar spent on radio.</p>
+                                    </div>
+                                    <img src="_/img/new/slide-1.png" />
+                                    <div class="col-md-12 slide-footer">
+                                        <p>"...an ROI <span class="simple-red">double</span> that of even the best results from many recent digital or TV media." <span class="small"><br> - ADVERTISING AGE</span></p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service_block two delay-03s animated wow zoomIn">
+                                    <div class="col-md-12 slide-copy">
+                                        <p>We are <span class="thick-red">more</span> than what is called "mobile".</p>
+                                    </div>
+                                    <img src="_/img/new/slide-2.png" />
+                                    <div class="col-md-12 slide-footer">
+                                        <p><span class="simple-red">90%</span> of data consumed on mobile devices is done over WIFI (not so mobile afterall)</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service_block three">
+                                    <div class="col-md-12 slide-copy">
+                                        <p>The brain encodes audio <span class="thick-red">DIFFERENTLY</span> (which is good for advertisers).</p>
+                                    </div>
+                                    <img src="_/img/new/slide-3.png" />
+                                    <div class="col-md-12 slide-footer">
+                                        <p>The mind processes spoken words <span class="simple-red">22% FASTER</span> than the written word.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service_block four">
+                                    <div class="col-md-12 slide-copy">
+                                        <p>Our on-air talent have <br><span class="thick-red">Deep Connections</span> with our audiences.</p>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <a href="#">
+                                                <img class="media-object" src="_/img/new/slide-4-1.png" alt="Ryan Seacrest">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">82%</h4>
+                                            Perceive a deep connection with a favorite radio personality
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <a href="#">
+                                                <img class="media-object" src="_/img/new/slide-4-2.png" alt="Elvis Duran">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">63%</h4>
+                                            Value their opinion and perspectives
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <a href="#">
+                                                <img class="media-object" src="_/img/new/slide-4-3.png" alt="Steve Harvey">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">43%</h4>
+                                            Considered or purchased a product recommended by their favorite personality
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service_block five">
+                                    <div class="col-md-12 slide-copy">
+                                        <p>Radio is the <span class="thick-red">LAST</span> mass medium people encounter 30 minutes prior to the sale</p>
+                                    </div>
+                                    <img src="_/img/new/slide-5.png" />
+                                    <div class="col-md-12 slide-footer">
+                                        <p>We reach them when it matters most, when they are out shopping and <span class="simple-red">more likely to spend</span>.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service_block six">
+                                    <div class="col-md-12 slide-copy">
+                                        <p>Live programming is where advertisers want to be and we do more of it than <span class="thick-red">ANYONE</span>.</p>
+                                    </div>
+                                    <p class="small">Hours of Live Programming (Annually) <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></p>
+                                    <img src="_/img/new/slide-6.png" />
+                                    <div class="col-md-12 slide-footer">
+                                        <p>"The genius of radio is that it's about the here and now... You can't skip past radio." <span class="small">- Matt Seiler</span><br><span class="xsmall">Chief Executive Media Buyer of IPG Mediabrands</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +288,7 @@
                         <div class="box-icon box-1"></div>
                         <div class="info">
                             <h4 class="text-center">Hispanics</h4>
-                            <p>iHeartMedia has the largest reach among Hispanics versus top Media Companies, reaching 39.8 million each month <a href="http://www.google.com" target="_blank"><i class="fa fa-info-circle"></i></a></p>
+                            <p>iHeartMedia has the largest reach among Hispanics versus top Media Companies, reaching 39.8 million each month <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></p>
                             <blockquote>We own the station that Hispanics listen to most – Los Angeles’ 102.7 KIISFM is the #1 listened to station among Hispanics</blockquote>
                             <blockquote>iHeartMedia reached more Hispanics each month than Google, Facebook and YouTube</blockquote>
                             <blockquote>The iHeartMedia Hispanic audience is about 60/40 English to Spanish, which mimics that of the total U.S. Hispanic population, while other Hispanic targeted media is predominantly Spanish-focused</blockquote>
@@ -226,7 +300,7 @@
                         <div class="box-icon box-2"></div>
                         <div class="info">
                             <h4 class="text-center">Moms</h4>
-                            <p>We are a leader among Moms and reach 94% of them each month <a href="http://www.google.com" target="_blank"><i class="fa fa-info-circle"></i></a></p>
+                            <p>We are a leader among Moms and reach 94% of them each month <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></p>
                             <blockquote>We reach more Moms than any other medium including Pinterest, Parenting Magazine and CBS TV</blockquote>
                             <blockquote>67% of iHeartMedia’s Moms listen to radio outside of the home, the majority of which is in the car</blockquote>
                             <blockquote>32 million Moms listen to radio every week, with an average time spent of 12 hours a week</blockquote>
@@ -238,7 +312,7 @@
                         <div class="box-icon box-3"></div>
                         <div class="info">
                             <h4 class="text-center">Millenials</h4>
-                            <p>iHeartMedia offers a variety of content that attracts 90% of MIllennials each month - 69 million listen to iHeartMedia monthly <a href="http://www.google.com" target="_blank"><i class="fa fa-info-circle"></i></a></p>
+                            <p>iHeartMedia offers a variety of content that attracts 90% of MIllennials each month - 69 million listen to iHeartMedia monthly <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></p>
                             <blockquote>We deliver more Millennials each month than Pinterest, NBC TV and Indeed.com</blockquote>
                             <blockquote>iHeartMedia Millennials are social trailblazers – our tentpole events have generated over 20 billion social impressions, most of them from Millennials</blockquote>
                             <blockquote>We get them! The iHeartMedia Millennial Network offers targeted buys at scale across broadcast and key iHeartRadio custom and live stations </blockquote>
@@ -275,7 +349,7 @@
                         <figure id="trigger-cs1-overlay" class="col-md-4 col-sm-6 portfolio-item" data-groups='["all", "national"]' data-date-created="2010-09-14" data-title="Baseball">
                             <div class="cover-card" style="background: url('_/img/new/case_study-1.png') no-repeat center top;background-size:cover;">
                                 <p>
-                                    HYUNDAI’S ALL-NEW SONATA
+                                    HYUNDAI'S ALL-NEW SONATA
                                 </p>
                             </div>
                         </figure>
@@ -289,7 +363,7 @@
                         <figure class="col-md-4 col-sm-6 portfolio-item" data-groups='["all", "local"]' data-date-created="2010-09-14" data-title="Baseball">
                             <div class="cover-card" style="background: url('_/img/new/case_study-3.png') no-repeat center top;background-size:cover;">
                                 <p>
-                                    Wendy’s
+                                    Wendy's
                                 </p>
                             </div>
                         </figure>
@@ -328,87 +402,64 @@
                 <div class="col-md-9 center-block content">
                     <h1>Featured Offerings</h1>
                     <h4>Reached 50 million users faster than any digital music service and even faster than Twitter, Facebook and Pinterest.</h4>
-                    <!--<div class="logo-image col-md-4">
-                        <img src="_/img/new/ihm-color-logo.png" class="img-responsive" />
-                    </div>
-                    <div class="logo-image col-md-4">
-                        <img src="_/img/new/ihr-color-logo.png" class="img-responsive" />
-                    </div>
-                    <div class="logo-image col-md-4">
-                        <img src="_/img/new/cco-color-logo.png" class="img-responsive" />
-                    </div>-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                  <div id="fo-1" class="col-md-2 team-leader-box">
-                    <div class="team-leader wow fadeInUp delay-03s">
-                      <div class="team-leader-shadow"></div>
-                        <img src="_/img/new/offering-1.jpg" class="img-responsive img-circle" />
-                    </div>
-                    <h3 class="wow fadeInDown delay-03s">RADIO</h3>
-                  </div>
-                  <div id="fo-2" class="col-md-2 team-leader-box">
-                    <div class="team-leader  wow fadeInUp delay-06s">
-                      <div class="team-leader-shadow"></div>
-                      <img src="_/img/new/offering-2.jpg" class="img-responsive img-circle" />
-                    </div>
-                    <h3 class="wow fadeInDown delay-06s">DIGITAL</h3>
-                  </div>
-                  <div id="fo-3" class="col-md-2 team-leader-box">
-                    <div class="team-leader wow fadeInUp delay-09s">
-                      <div class="team-leader-shadow"></div>
-                      <img src="_/img/new/offering-3.jpg" class="img-responsive img-circle" />
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">EVENTS</h3>
-                  </div>
-                  <div id="fo-4" class="col-md-2 team-leader-box">
-                    <div class="team-leader wow fadeInUp delay-09s">
-                      <div class="team-leader-shadow"></div>
-                      <img src="_/img/new/offering-4.jpg" class="img-responsive img-circle" />
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">OUTDOOR</h3>
-                  </div>
-                  <div id="fo-5" class="col-md-2 team-leader-box">
-                    <div class="team-leader wow fadeInUp delay-09s">
-                      <div class="team-leader-shadow"></div>
-                      <img src="_/img/new/offering-5.jpg" class="img-responsive img-circle" />
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">SOCIAL</h3>
-                  </div>
-                  <div id="fo-6" class="col-md-2 team-leader-box">
-                    <div class="team-leader wow fadeInUp delay-09s">
-                      <div class="team-leader-shadow"></div>
-                      <img src="_/img/new/offering-6.jpg" class="img-responsive img-circle" />
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">TRAFFIC</h3>
-                  </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div id="fo-container" class="row">
-                <div id="fo" class="col-md-12">
-                    <div id="fo-1-1" class="col-md-10 center-block content visible">
-                        <blockquote>We reach 245 million listeners each and every month through radio.</blockquote>
-                    </div>
-                    <div id="fo-2-1" class="col-md-10 center-block content hidden">
-                        <blockquote>Through the power of our iHeartRadio digital platforms, we connect with over 97 million users.</blockquote>
-                    </div>
-                    <div id="fo-3-1" class="col-md-10 center-block content hidden">
-                        <blockquote>More than 20,000 local and national events keep our consumers engaged and entertained throughout the year.</blockquote>
-                    </div>
-                    <div id="fo-4-1" class="col-md-10 center-block content hidden">
-                        <blockquote>We connect with consumers everywhere they are, including our global Outdoor billboard network which reaches more than 141 million people.</blockquote>
-                    </div>
-                    <div id="fo-5-1" class="col-md-10 center-block content hidden">
-                        <blockquote>We have a strong social following with 59 million followers... and counting.</blockquote>
-                    </div>
-                    <div id="fo-6-1" class="col-md-10 center-block content hidden">
-                        <blockquote>We reach an incredible 196 million commuters through our owned and operated Total Traffic and Weather Network.</blockquote>
-                    </div>
                 </div>
             </div>
         </div>
+            <div class="row">
+                <div id="og-wrapper" class="col-md-12">
+                    <ul id="og-grid" class="og-grid">
+                        <li class="col-md-2">
+                            <a href="javascript:void(0)" data-largesrc="_/img/new/offering-1.jpg" data-title="Radio" data-description="We reach 245 million listeners each and every month through radio.">
+                                <img src="_/img/new/offering-1.jpg" class="img-circle img-responsive" alt="Radio"/>
+                                <div class="img-overlay">
+                                    <h4>Radio</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="javascript:void(0)" data-largesrc="_/img/new/offering-2.jpg" data-title="Digital" data-description="Through the power of our iHeartRadio digital platforms, we connect with over 97 million users.">
+                                <img src="_/img/new/offering-2.jpg" class="img-circle img-responsive" alt="Digital"/>
+                                <div class="img-overlay">
+                                    <h4>Digital</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="javascript:void(0)" data-largesrc="_/img/new/offering-3.jpg" data-title="Events" data-description="More than 20,000 local and national events keep our consumers engaged and entertained throughout the year.">
+                                <img src="_/img/new/offering-3.jpg" class="img-circle img-responsive" alt="Events"/>
+                                <div class="img-overlay">
+                                    <h4>Events</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="javascript:void(0)" data-largesrc="_/img/new/offering-4.jpg" data-title="Outdoor" data-description="We connect with consumers everywhere they are, including our global Outdoor billboard network which reaches more than 141 million people.">
+                                <img src="_/img/new/offering-4.jpg" class="img-circle img-responsive" alt="Outdoor"/>
+                                <div class="img-overlay">
+                                    <h4>Outdoor</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="javascript:void(0)" data-largesrc="_/img/new/offering-5.jpg" data-title="Social" data-description="We have a strong social following with 59 million followers... and counting.">
+                                <img src="_/img/new/offering-5.jpg" class="img-circle img-responsive" alt="Social"/>
+                                <div class="img-overlay">
+                                    <h4>Social</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="javascript:void(0)" data-largesrc="_/img/new/offering-6.jpg" data-title="Traffic" data-description="We reach an incredible 196 million commuters through our owned and operated Total Traffic and Weather Network.">
+                                <img src="_/img/new/offering-6.jpg" class="img-circle img-responsive" alt="Traffic"/>
+                                <div class="img-overlay">
+                                    <h4>Traffic</h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    <div class="clear"></div>
     </section>
     
     <!-- Section 7 - Future -->
@@ -473,7 +524,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10" style="top:20%;height: 60%;">
                         <!--<h1>Video Here</h1>-->
-                        <iframe src="https://player.vimeo.com/video/122694958?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe id="video-button-player" src="https://player.vimeo.com/video/122694958?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -503,9 +554,9 @@
                         <div class="marketing-plan">
                             <h2>iHeartMedia Marketing Plan</h2>
                             <p>iHeartMedia created a 'never-been-done' one-time concert release party by singer Carrie Underwood around the release of "Greatest Hits: Decade #1."</p>
-                            <blockquote>First-ever live concert from Times Square simultaneously streamed across the U.S. <a href="http://www.google.com" target="_blank"><i class="fa fa-info-circle"></i></a></blockquote>
-                            <blockquote>Connected with global, national and local audiences to create Hyundai take-overs across on-air, digital, on-site. Included a Jingle Ball National Flyaway Sweepstakes. <a href="http://www.google.com" target="_blank"><i class="fa fa-info-circle"></i></a></blockquote>
-                            <blockquote>Road blocked event with 8 digital Billboards (with concert countdown clock) that interacted with Hyundai billboards. <a href="http://www.google.com" target="_blank"><i class="fa fa-info-circle"></i></a></blockquote>
+                            <blockquote>First-ever live concert from Times Square simultaneously streamed across the U.S. <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></blockquote>
+                            <blockquote>Connected with global, national and local audiences to create Hyundai take-overs across on-air, digital, on-site. Included a Jingle Ball National Flyaway Sweepstakes. <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></blockquote>
+                            <blockquote>Road blocked event with 8 digital Billboards (with concert countdown clock) that interacted with Hyundai billboards. <a href="javascript:void(0)" data-toggle="tooltip" title="Some tooltip text!"><i class="fa fa-info-circle"></i></a></blockquote>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -522,6 +573,10 @@
     <script src="_/js/vendor.min.js"></script>
     <!-- App JS minified -->
     <script src="_/js/app.min.js"></script>
+    
+    <script type="text/template" id="inline-template">
+      <p>I am an inline content</p>
+    </script>
     
     </body>
 </html>
