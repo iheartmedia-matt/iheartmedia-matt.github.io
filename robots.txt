@@ -1,3 +1,4 @@
-# Add your allow/disallow files here
+# robotstxt.org/
 
 User-agent: *
+Disallow:
