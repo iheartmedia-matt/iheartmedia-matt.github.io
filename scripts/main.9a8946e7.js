@@ -1,1 +1,0 @@
-function resizer(){var a=$(window).height(),b=$(".navbar").height(),c=a-b;$("#headerwrap").height(c);var d=c/4*2.5;$("#component-video").height(d),$("#headerwrap").css("margin-top",b),console.log("resizer init")}console.log("'Allo 'Allo!"),$(function(){App.init()});var App={listen:function(){console.log("Ready and Listening")},init:function(){this.listen(),resizer()}};
