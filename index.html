@@ -549,7 +549,30 @@
         var param = $('form').serialize();
         var redirect = 'https://register2.rockthevote.com/registrants/new/?'+param;
         window.location.href = redirect;
-    }); 
+    });
+
+    var navHeight = $('nav').height();
+        
+        $('.navbar-nav li a, .navbar-brand').on('click', function () {
+            var target = $(this).attr('href');
+            $(target).velocity('scroll', {
+                duration: 300,
+                offset: -navHeight,
+                easing: 'ease-in-out'
+            });
+
+        });
+        
+        $('.next-arrow a').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var target = $(this).attr('href');
+            $(target).velocity('scroll', {
+                duration: 300,
+                offset: -navHeight,
+                easing: 'ease-in-out'
+            });
+        });
     </script>
 
     <script type="text/javascript">
