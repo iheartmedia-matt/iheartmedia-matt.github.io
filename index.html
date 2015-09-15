@@ -564,8 +564,6 @@
         });
         
         $('.next-arrow a').on('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
             var target = $(this).attr('href');
             $(target).velocity('scroll', {
                 duration: 300,
